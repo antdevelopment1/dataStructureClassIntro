@@ -12,7 +12,12 @@ class Student {
 
     }
 
+    static findThis() {
+        console.log(this)
+    }
+
     fullName() {
+        console.log(this)
         return this.firstName + " " + this.lastName;
     }
 
@@ -42,13 +47,15 @@ class Student {
 let firstStudent = new Student('April', 'Copes', '1991');
 let secondStudent = new Student('Lauren', 'Wilkerson', '1990');
 
-console.log(firstStudent.fullName());
-console.log(firstStudent.getYear());
-secondStudent.addNumber(15)
-secondStudent.addNumber(22)
-secondStudent.addNumber(44)
-console.log(secondStudent.addNumber(6))
-console.log(firstStudent.addNumber())
-console.log(secondStudent.addTogether())
-console.log(secondStudent.getAverage())
-console.log(Student.notifyStudents())
+// console.log(firstStudent.fullName());
+// console.log(firstStudent.getYear());
+// secondStudent.addNumber(15)
+// secondStudent.addNumber(22)
+// secondStudent.addNumber(44)
+// console.log(secondStudent.addNumber(6))
+// console.log(firstStudent.addNumber())
+// console.log(secondStudent.addTogether())
+// console.log(secondStudent.getAverage())
+// console.log(Student.notifyStudents())
+console.log(Student.findThis())
+console.log(firstStudent.fullName())
